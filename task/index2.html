@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+    <button class="theme-switcher" id="themeSwitcher">Ночной режим</button>
+    
+    <div class="container">
+        <h1>Форма ввода данных</h1>
+        
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <button type="submit">Отправить</button>
+        </form>
+        
+        <div class="output" id="output">
+            <h2>Введённые данные:</h2>
+            <p><strong>Фамилия:</strong> <span id="outputLastName"></span></p>
+            <p><strong>Имя:</strong> <span id="outputFirstName"></span></p>
+            <p><strong>Электронная почта:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Телефон:</strong> <span id="outputPhone"></span></p>
+        </div>
+    </div>
     <script src="app2.js"></script>
 </body>
 </html>

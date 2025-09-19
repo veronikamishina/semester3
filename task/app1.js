@@ -10,6 +10,7 @@ if (userInput === null || userInput.trim() === "") {
     let number = Number(normalizedInput);
         if (isNaN(number)) {
         console.log("Ошибка: Введено не число");
+        return task2(); // Перехожу к заданию 1.2
     } else {
         // Для подсчета цифр убираем десятичный разделитель и знак минуса
         let cleanNumber = Math.abs(number).toString().replace('.', '');
