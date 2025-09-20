@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конвертер скорости</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Task 3</title>
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
+    <div id="app" class="container">
+        <h1>Конвертер скорости</h1>
+        
+        <div class="input-group">
+            <label for="kmh">Скорость в км/ч:</label>
+            <input 
+                type="number" 
+                id="kmh" 
+                v-model.number="kmh" 
+                placeholder="Введите скорость в км/ч"
+                step="0.1"
+            >
+        </div>
+        
+        <div class="input-group">
+            <label for="ms">Скорость в м/с:</label>
+            <input 
+                type="number" 
+                id="ms" 
+                v-model.number="ms" 
+                placeholder="Введите скорость в м/с"
+                step="0.1"
+            >
+        </div>
+        
+        <div class="conversion-info">
+            <h3>Как работает конвертация?</h3>
+            <p>1 км/ч = 1000 м / 3600 с = 5/18 м/с ≈ 0.27778 м/с</p>
+            <p>1 м/с = 0.001 км / (1/3600) ч = 3.6 км/ч</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="app3.js"></script>
 </body>
 </html>
